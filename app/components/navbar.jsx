@@ -7,17 +7,19 @@ const Navbar = () => {
         <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
           <Image
             src="/dr-bg.png"
-            width={50}
-            height={50}
+            width={100}
+            height={100}
             alt="Dhaxaal-reeb logo"
           ></Image>
-          <span className="ml-3 text-xl">Dhaxal-Reeb</span>
+          <span className="ml-3 text-xl font-medium bg-gradient-to-r from-[#1B52B9] to-[#289CDF] text-transparent bg-clip-text">
+            Dhaxal-Reeb
+          </span>
         </a>
         <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-          <a className="mr-5 hover:text-gray-900">First Link</a>
-          <a className="mr-5 hover:text-gray-900">Second Link</a>
-          <a className="mr-5 hover:text-gray-900">Third Link</a>
-          <a className="mr-5 hover:text-gray-900">Fourth Link</a>
+          <a className="mr-5 text-[#1B52B9] hover:text-gray-900">Home</a>
+          <a className="mr-5 text-[#1B52B9] hover:text-gray-900">About</a>
+          <a className="mr-5 text-[#1B52B9] hover:text-gray-900">Contact</a>
+          <a className="mr-5 text-[#1B52B9] hover:text-gray-900">Donate</a>
         </nav>
       </div>
     </header>
