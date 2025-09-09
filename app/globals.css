@@ -1,1 +1,64 @@
 @import 'tailwindcss';
+
+body {
+  background-color: #fffff0;
+}
+
+.square {
+  position: absolute;
+  display: block;
+  top: -5%;
+  left: -5%;
+  width: 100%;
+  height: 700px;
+  opacity: 0.08;
+  z-index: 0;
+  background: #1a2980;
+  background: linear-gradient(to right, #1a2980, #26d0ce);
+  pointer-events: none;
+}
+
+@media (min-width: 992px) {
+  .square {
+    width: 71%;
+  }
+}
+
+.square-1 {
+  -webkit-transform: skewY(5deg);
+  transform: skewY(5deg);
+}
+
+.square-2 {
+  left: -3%;
+  -webkit-transform: skewY(3deg);
+  transform: skewY(3deg);
+}
+
+.square-flipped.square {
+  top: auto;
+  right: -5%;
+  bottom: -9%;
+  left: auto;
+  height: 500px;
+  background: #26d0ce;
+  background: linear-gradient(to right, #26d0ce, #1a2980);
+}
+
+@media (min-width: 992px) {
+  .square-flipped.square {
+    width: 80%;
+  }
+}
+
+.square-flipped.square-1 {
+  -webkit-transform: skewY(-2deg);
+  transform: skewY(-2deg);
+}
+
+.square-flipped.square-2 {
+  left: auto;
+  right: -3%;
+  -webkit-transform: skewY(-4deg);
+  transform: skewY(-4deg);
+}
